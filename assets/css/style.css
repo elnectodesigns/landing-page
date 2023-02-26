@@ -301,7 +301,7 @@ joomla-field-media .field-media-preview {
     font: inherit;
     color: inherit;
     text-transform: none;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     border-radius: 0;
     display: inline-block;
     box-sizing: border-box;
@@ -512,7 +512,7 @@ body {
 
 abbr[title] {
     text-decoration: underline dotted;
-    -webkit-text-decoration-style: dotted
+    /* -webkit-text-decoration-style: dotted; */
 }
 
 b,strong {
@@ -758,11 +758,11 @@ pre code {
     outline: 2px dotted #292929
 }
 
-::selection {
+/* ::selection {
     background: #50b848;
     color: #fff;
     text-shadow: none
-}
+} */
 
 details,main {
     display: block
@@ -1399,7 +1399,7 @@ button.uk-icon:not(:disabled) {
     color: #222
 }
 
-.uk-range {
+/* .uk-range {
     -webkit-appearance: none;
     box-sizing: border-box;
     margin: 0;
@@ -1407,7 +1407,7 @@ button.uk-icon:not(:disabled) {
     max-width: 100%;
     width: 100%;
     background: 0 0
-}
+} */
 
 .uk-range:focus {
     outline: 0
@@ -1646,14 +1646,23 @@ select.uk-form-width-xsmall {
 }
 
 .uk-select:not([multiple]):not([size]) {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     -moz-appearance: none;
     padding-right: 20px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23222222%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23222222%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
     background-repeat: no-repeat;
     background-position: 100% 50%
 }
-
+.uk-nav li > a{
+    color: #000000 !important;
+}
+.footer-region-switcher .uk-panel.mod-languages a {
+    color: #ffffff ; 
+  }
+.uk-dropdown .uk-panel.mod-languages a {
+    color: #000000 !important; 
+  }
+  
 .uk-select:not([multiple]):not([size]) option {
     color: #222
 }
@@ -2446,14 +2455,26 @@ select.uk-form-width-xsmall {
 
 .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
     background-color: #fff;
-    box-shadow: 0 6px 50px rgba(0,0,0,.05)
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0)
 }
 
 .uk-card-default {
     background-color: transparent;
     color: #292929;
-    box-shadow: 0 6px 50px rgba(0,0,0,.05)
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0)
 }
+
+.uk-section-default.contact-sec .uk-card-default {
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0.072);
+    min-height: 200px
+}
+.uk-nav.uk-dropdown-nav a {
+    color: #000000 !important;
+  }
+  .uk-heading-large.uk-margin-remove-vertical.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-heading-divider {
+    border-color: #50b848;
+    max-width: 300px;
+  }
 
 .uk-card-default .uk-card-title {
     color: #292929
@@ -2463,8 +2484,36 @@ select.uk-form-width-xsmall {
     background-color: #fff;
     box-shadow: 0 4px 28px rgba(0,0,0,.07)
 }
-
+.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin.mixcam li a{
+    border: 1px solid #ffffff;
+}
+.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin.mixcam li a:hover{
+    border: 1px solid #ffffff;
+    background: #ffffff;
+}
+.acc-new ul {
+    margin: 0;
+  }
+.mixcam .uk-active a {
+    background: #fff !important;
+  }
+  .uk-container.uk-first-column {
+    background: #f5fff5;
+  }
+  .uk-card-body .content-driver{
+    background: #ffffff !important;
+  }
+  
+  .contact-body {
+    max-width: 400px;
+    margin: auto;
+  }
+  .uk-section-default.contact-sec {
+    padding: 5%;
+  }
 .uk-card-default .uk-card-header {
+   
+   
     border-bottom: 1px solid #e9e9e9
 }
 
@@ -5146,19 +5195,53 @@ ul.uk-nav-sub {
     transition: .2s ease-in-out;
     transition-property: color,background-color,border-color,box-shadow
 }
+.mixcam .uk-dotnav>*>* {
+    display: block;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #ffffff;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: .2s ease-in-out;
+    transition-property: color,background-color,border-color,box-shadow
+}
 
 .uk-dotnav>*>:hover {
     background-color: #50B848
 }
 
+.mixcam.uk-dotnav>*>:hover {
+    background-color: #ffffff;
+}
+
 .uk-dotnav>*>:active {
     background-color: transparent;
+}
+.mixcam .uk-dotnav>.uk-active>* {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .uk-dotnav>.uk-active>* {
     background-color: #50b848
 }
 
+.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin.mixcam {
+    margin-bottom: 219px !important;
+    margin-right: -25%;
+  }
+  .uk-slider-nav.uk-dotnav.uk-flex-center.top-slide {
+    margin-top: 5%;
+  }
+
+.mixbg {
+    background-image: url("../../assets/img/BG-BODY.png") !important;
+    background-size: cover I !important;
+  }
 .uk-dotnav-vertical {
     flex-direction: column;
     margin-left: 0;
@@ -6471,7 +6554,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-secondary {
-    color: #3333333!important
+    color: #333333 !important
 }
 
 .uk-text-success {
@@ -10817,4 +10900,57 @@ button.uk-offcanvas-close.uk-icon.uk-close {
     background: #070033;
     border-bottom: 1px solid #070033;
     top: 80px!important
+}
+@media (max-width: 800px)
+{
+    h1 
+    {
+        font-size: 38px !important;
+    line-height: 1.1em !important;
+    }
+    h2 {
+        font-size: 1.6em !important;
+      }
+      .uk-card-title.uk-text-center h1 {
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 18px !important;
+        line-height: 31px !important;
+      }
+      .el-content.uk-button.uk-button-primary.uk-flex-inline.uk-flex-center.uk-flex-middle.more-btn {
+        width: 260px;
+        height: 77px;
+        font-size: 24px;
+       
+      }
+    sup {
+        top: -2.3em;
+        font-size: 23px;
+        margin-left: 10px;
+      }
+      .driver-right-cntnt sup{
+        top: -1.3em;
+        font-size: 13px;
+        margin-left: 5px;
+      }
+      .uk-card-body.uk-margin-remove.uk-padding-remove {
+        
+        margin: 20px !important;
+      }
+      .acc-new .uk-accordion-title.slide-accord {
+        font-size: 14px;
+      }
+      .uk-card-title{
+        margin-bottom: 10px !important;
+      }
+      .uk-card-title.uk-text-center {
+        font-size: 26px !important;
+        padding: 20px;
+          padding-bottom: 20px;
+        padding-bottom: 30px;
+      }
+      .uk-card-body.content-driver.uk-margin-remove.uk-padding-remove {
+        margin: 0 !important;
+      }
 }
